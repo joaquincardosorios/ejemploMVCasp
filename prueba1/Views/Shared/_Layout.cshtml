@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Mi Calculadora fea</title>
+
+    <style>
+        .btn {
+            padding: 25px;
+            background: purple;
+            font-weight: bold;
+            min-width: 150px;
+            color: white;
+            border-radius: 5px;
+        }
+    </style>
+
+</head>
+<body>
+    <div>
+        <div style="padding:1.5rem 0; background:blue;">
+            <h1 style="text-align: center; color:white; font-weight:bold;">Mi super Calculadora :)</h1>
+        </div>
+        <div style="display:flex;">
+            <div style="padding:20px; margin:5px 0; ">
+                <a href="index" class="btn" style="background:red">Index</a>
+            </div>
+            <div style="padding:20px; margin:5px 0">
+                <a href="sumar" class="btn">Suma</a>
+            </div>
+
+            <div style="padding:20px; margin:5px 0">
+                <a href="restar" class="btn">Resta</a>
+            </div>
+
+            <div style="padding:20px; margin:5px 0">
+                <a href="multiplicar" class="btn">Multiplicacion</a>
+            </div>
+            <div style="padding:20px; margin:5px 0">
+                <a href="dividir" class="btn">Division</a>
+            </div>
+            
+        </div>
+        <div style="padding: 20px">
+			@RenderBody()
+        </div>
+        <div style="padding:1.5rem 0; background:blue;">
+            <p style="text-align: center; color:white;">Sitio creado por Juako</p>
+        </div>
+    </div>
+    
+
+</body>
+</html>

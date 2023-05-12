@@ -1,0 +1,32 @@
+﻿<h1> Bienvenido a multiplicacion</h1>
+<h2>Ingresa los numeros a calcular</h2>
+<form action="/calculadora/multiplicar" method="POST">
+	<table>
+		<thead>
+			<tr>
+				<th><label for="txtnum1">Numero 1</label></th>
+				<th> </th>
+				<th><label for="txtnum2">Numero 2</label></th>
+				<th> </th>
+				<th><label for="txtresultado">Resultado</label></th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<th><input type="text" name="txtnum1" id="txtnum1" value="@ViewBag.num1" /></th>
+				<th> * </th>
+				<th><input type="text" name="txtnum2" id="txtnum2" value="@ViewBag.num2" /></th>
+				<th> = </th>
+				<th><input type="text" disabled name="txtresultado" id="txtresultado" value="@ViewBag.Multiplicacion" /></th>
+			</tr>
+		</tbody>
+	</table>
+
+	@if (ViewBag.Error != null)
+	{
+		<div style="padding: 10px; background:red; color:white; font-weight:bold; width:30%">
+			@ViewBag.Error
+		</div>
+	}
+	<button type="submit">Calcular</button>
+</form>
